@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8800
 
-CMD ["sh", "-c", "sed -i 's/host: \"localhost\"/host: \"db\"/' index.js && sed -i 's/password: \"\"/password: \"root\"/' index.js && node index.js"]
+CMD ["npm", "start"]
